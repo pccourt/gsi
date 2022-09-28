@@ -1,0 +1,421 @@
+@charset "utf-8";
+/*This is the template for css global reset--avoid cross broswer padding and margin issue. By Tony Xia*/
+/* Global reset */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h5, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h5, h5, h6 { font-size:100% }
+q:before, q:after { content:''}
+
+
+
+/* Global reset-RESET */
+
+/* The below restores some sensible defaults */
+strong { font-weight: bold }
+em { font-style: italic }
+
+
+/** a { position:relative } /* Gets links displaying over a PNG background */
+a { outline:none } /* Gets rid of Firefox's dotted borders */
+a img { border:none } /* Gets rid of IE's blue borders */
+
+
+.imgGoRight{
+	float:right;
+	margin:0 0 10px 10px;
+	border:3px solid #83DE07;
+}
+
+a.imgGoRightLink .imgGoRight:hover{
+	border:3px solid #669900;
+}
+
+
+body{
+	background:url(images/Background-Cut.jpg) repeat;
+}
+
+#wrapper{
+	width:950px;
+	margin:0 auto;
+}
+
+#header{
+	width:100%;
+	height:236px;
+	background:url(images/Header-Cut.png) repeat-x;
+}
+
+#headerWrapper{
+	width:950px;
+	margin:0 auto;
+}
+
+#subHeader{
+	width:100%;
+	margin:0 0 30px 0;
+}
+
+#container{
+	width:100%;
+}
+
+#solarsaker{
+	width:130%;
+	margin-left:-220px;
+}
+
+#cleaner{
+	height:1px;
+	clear:both;
+}
+
+.clean{
+	height:1px;
+	clear:both;
+}
+
+#footer{
+	width:100%;
+	height:80px;
+	margin:80px 0 0px 0;
+	text-align:center;
+}
+
+/*typographic*/
+h1{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:55px;
+	color:#FCFCFC;
+	font-weight:normal;
+	margin:0 0 10px 0;
+}
+
+h2{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:20px;
+	line-height:1.5;
+	color:#b8dbbb;
+	font-weight:normal;
+}
+
+h3{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:18px;
+	line-height:1.5;
+	color:#8DFCA6;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+
+
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:1.6;
+	margin:0 0 10px 0;
+	color:#FCFCFC;
+}
+
+em{
+	color:#07FE00;
+}
+
+a{
+	color:#07FE00;
+	text-decoration:underline;
+}
+
+
+
+
+
+/*Navigation*/
+#navigation{
+	width:640px;
+	height:80px;
+	float:left;
+	margin:90px 0 0 0;
+	position:relative;
+}
+
+#navigation ul li{
+	display:inline;
+}
+
+
+#navigation ul li a{
+	color:#00FF00;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+/*initial state*/
+#navigation ul li a#performance{
+	display:block;
+	width:90px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(images/Tabs.png) no-repeat -7px 0;
+} 
+
+#navigation ul li a#performanceHighlights{
+	display:block;
+	width:90px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(images/Tabs.png) no-repeat -7px -321px;
+} 
+
+#navigation ul li a#projects{
+	display:block;
+	width:63px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:110px;
+	background:url(images/Tabs.png) no-repeat -119px 0;
+} 
+
+
+#navigation ul li a#projectsHighlights{
+	display:block;
+	width:63px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:110px;
+	background:url(images/Tabs.png) no-repeat -119px -321px;
+} 
+
+
+#navigation ul li a#sponsor{
+	display:block;
+	width:85px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:215px;
+	background:url(images/Tabs.png) no-repeat -228px 0;
+} 
+
+
+#navigation ul li a#sponsorHighlights{
+	display:block;
+	width:85px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:215px;
+	background:url(images/Tabs.png) no-repeat -228px -321px;
+} 
+
+
+#navigation ul li a#racing{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:325px;
+	background:url(images/Tabs.png) no-repeat -340px 0;
+} 
+
+
+#navigation ul li a#racingHighlights{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:325px;
+	background:url(images/Tabs.png) no-repeat -340px -321px;
+} 
+
+#navigation ul li a#blog{
+	display:block;
+	width:55px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:435px;
+	background:url(images/Tabs.png) no-repeat -451px 0;
+} 
+
+#navigation ul li a#people{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:540px;
+	background:url(images/Tabs.png) no-repeat -562px 0;
+} 
+
+#navigation ul li a#peopleHighlights{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:540px;
+	background:url(images/Tabs.png) no-repeat -562px -321px;
+}
+
+
+/*hover state*/
+#navigation ul li a#performance:hover{
+	background-position:-7px -321px;
+}
+
+#navigation ul li a#projects:hover{
+	background-position:-119px -321px;
+}
+
+#navigation ul li a#sponsor:hover{
+	background-position:-228px -321px;
+}
+
+#navigation ul li a#racing:hover{
+	background-position:-340px -321px;
+}
+
+#navigation ul li a#blog:hover{
+	background-position:-451px -321px;
+}
+
+#navigation ul li a#people:hover{
+	background-position:-562px -321px;
+}
+
+/*Logo*/
+#logo{
+	width:310px;
+	height:169px;
+	float:right;
+}
+
+
+/*main column*/
+.mainCol{
+	width:580px;
+	float:left;
+}
+
+.mainCol .mainColSubContainer{
+	width:580px;
+	background:url(images/dotts.png) left bottom repeat-x;
+	padding:0 0 15px 0;
+	margin:0 0 15px 0;
+}
+
+.mainCol #tumanako{
+	height:180px;
+	background:url(images/tumanako.png) no-repeat 310px 30px;
+}
+
+.mainCol #solarNetwork{
+	height:250px;
+	background:url(images/solarnetwork.png) no-repeat 260px 102px;
+}
+
+.mainCol #wattsClever{
+	height:250px;
+	background:url(images/WattsClever_small.png) no-repeat 260px 102px;
+}
+
+
+.mainCol #sakerOne{
+	height:250px;
+	background:url(images/SakerGT-Pic.png) no-repeat 260px 50px;
+}
+
+.mainCol #sakerTwo{
+	height:300px;
+	background:url(images/MKII-Pic.png) no-repeat 0px 100px;
+}
+
+.mainCol #zen{
+	height:200px;
+	background:url(images/zen-Pic.png) no-repeat 260px 10px;
+}
+
+.mainCol .boxes{
+	height:200px;
+}
+
+.mainCol .floatImg{
+	float:left;
+	margin:0 10px 10px 0;
+	border:3px solid #669900;
+}
+
+/*side column*/
+.sideCol{
+	width:275px;
+	float:right;
+}
+
+.sideCol a#rssLink{
+	display:block;
+	width:273px;
+	height:124px;
+	background:url(images/rss.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#rssLink:hover{
+	background-position:0 -118px;
+}
+
+
+.sideCol a#supportLink{
+	display:block;
+	width:273px;
+	height:124px;
+	background:url(images/support.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#supportLink:hover{
+	background-position:0 -128px;
+}
+
+.sideCol a#meetLink{
+	display:block;
+	width:273px;
+	height:124px;
+	background:url(images/meet.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#meetLink:hover{
+	background-position:0 -117px;
+}
+
+.sideCol a#buyLink{
+	display:block;
+	width:273px;
+	height:120px;
+	background:url(images/MerchandisePic.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#buyLink:hover{
+	background-position:0 -138px;
+}
+
+
+
+
+
