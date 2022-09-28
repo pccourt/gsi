@@ -1,0 +1,311 @@
+@charset "utf-8";
+/*This is the template for css global reset--avoid cross broswer padding and margin issue. By Tony Xia*/
+/* Global reset */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h5, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h5, h5, h6 { font-size:100% }
+q:before, q:after { content:''}
+
+
+
+/* Global reset-RESET */
+
+/* The below restores some sensible defaults */
+strong { font-weight: bold }
+em { font-style: italic }
+
+
+/** a { position:relative } /* Gets links displaying over a PNG background */
+a { outline:none } /* Gets rid of Firefox's dotted borders */
+a img { border:none } /* Gets rid of IE's blue borders */
+
+
+.imgGoRight{
+	float:right;
+	margin:0 0 10px 10px;
+	border:3px solid #83DE07;
+}
+
+a.imgGoRightLink .imgGoRight:hover{
+	border:3px solid #669900;
+}
+
+
+body{
+	background:url(images/Background-Cut.jpg) repeat;
+}
+
+
+#header{
+	width:100%;
+	height:236px;
+	background:url(images/Header-Cut.png) repeat-x;
+}
+
+#headerWrapper{
+	width:950px;
+	margin:0 auto;
+}
+
+/*Navigation*/
+#navigation ul li{
+	display:inline;
+}
+
+
+#navigation ul li a{
+	color:#00FF00;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+/*initial state*/
+#navigation ul li a#performance{
+	display:block;
+	width:90px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(images/Tabs.png) no-repeat -7px 0;
+} 
+
+#navigation ul li a#performanceHighlights{
+	display:block;
+	width:90px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(images/Tabs.png) no-repeat -7px -321px;
+} 
+
+#navigation ul li a#projects{
+	display:block;
+	width:63px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:80px;
+	background:url(images/Tabs.png) no-repeat -119px 0;
+} 
+
+
+#navigation ul li a#projectsHighlights{
+	display:block;
+	width:63px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:80px;
+	background:url(images/Tabs.png) no-repeat -119px -321px;
+} 
+
+
+#navigation ul li a#sponsor{
+	display:block;
+	width:85px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:155px;
+	background:url(images/Tabs.png) no-repeat -228px 0;
+} 
+
+
+#navigation ul li a#sponsorHighlights{
+	display:block;
+	width:85px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:155px;
+	background:url(images/Tabs.png) no-repeat -228px -321px;
+} 
+
+
+#navigation ul li a#racing{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:230px;
+	background:url(images/Tabs.png) no-repeat -340px 0;
+} 
+
+
+#navigation ul li a#racingHighlights{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:230px;
+	background:url(images/Tabs.png) no-repeat -340px -321px;
+} 
+
+#navigation ul li a#blog{
+	display:block;
+	width:55px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:305px;
+	background:url(images/Tabs.png) no-repeat -451px 0;
+} 
+
+#navigation ul li a#people{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:380px;
+	background:url(images/Tabs.png) no-repeat -562px 0;
+} 
+
+#navigation ul li a#peopleHighlights{
+	display:block;
+	width:57px;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:380px;
+	background:url(images/Tabs.png) no-repeat -562px -321px;
+}
+
+
+/*hover state*/
+#navigation ul li a#performance:hover{
+	background-position:-7px -321px;
+}
+
+#navigation ul li a#projects:hover{
+	background-position:-119px -321px;
+}
+
+#navigation ul li a#sponsor:hover{
+	background-position:-228px -321px;
+}
+
+#navigation ul li a#racing:hover{
+	background-position:-340px -321px;
+}
+
+#navigation ul li a#blog:hover{
+	background-position:-451px -321px;
+}
+
+#navigation ul li a#people:hover{
+	background-position:-562px -321px;
+}
+
+
+/*typographic*/
+h1{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:55px;
+	color:#FCFCFC;
+	font-weight:normal;
+	margin:0 0 10px 0;
+}
+
+h2{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:20px;
+	line-height:1.5;
+	color:#b8dbbb;
+	font-weight:normal;
+}
+
+h3{
+	font-family:Georgia, "Times New Roman", Times, serif, "Century Gothic";
+	font-size:18px;
+	line-height:1.5;
+	color:#8DFCA6;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+
+
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:1.6;
+	margin:0 0 10px 0;
+	color:#FCFCFC;
+}
+
+em{
+	color:#07FE00;
+}
+
+a{
+	color:#07FE00;
+	text-decoration:underline;
+}
+
+
+
+/*side column*/
+.sideCol{
+	width:275px;
+}
+
+
+.sideCol a#rssLink{
+	display:block;
+	width:136px;
+	height:62px;
+	background:url(images/rss_small.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#rssLink:hover{
+	background-position:0 -59px;
+}
+
+
+.sideCol a#supportLink{
+	display:block;
+	width:136px;
+	height:62px;
+	background:url(images/support_small.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#supportLink:hover{
+	background-position:0 -64px;
+}
+
+.sideCol a#meetLink{
+	display:block;
+	width:134px;
+	height:62px;
+	background:url(images/meet_small.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#meetLink:hover{
+	background-position:0 -59px;
+}
+
+.sideCol a#buyLink{
+	display:block;
+	width:136px;
+	height:60px;
+	background:url(images/merchandise_small.png) 0 0 no-repeat;
+	text-indent:-9999px;
+}
+
+.sideCol a#buyLink:hover{
+	background-position:0 -69px;
+}
+

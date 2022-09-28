@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/MasterTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Greenstage Power Security" />
+<meta name="Keywords" content="greenstage power, security" />
+<meta name="language" content="English" />
+<meta name="author" content="Greenstage" />
+<meta name="copyright" content="Greenstage" />
+<meta name="robots" content="ALL" />
+<meta name="revisit-after" content="15 days" />
+<meta name="document-class" content="Living Document" />
+<meta name="document-rights" content="Copyrighted Work" />
+<meta name="document-type" content="Web Page" />
+<meta name="document-rating" content="General" />
+<meta name="document-distribution" content="Global" />
+<meta name="document-state" content="Static" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Security - Greenstage Power</title>
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<div id="header">
+        <div id="headerWrapper">
+            <div id="navigation">
+            	<ul>
+                	<!-- InstanceBeginEditable name="nav" -->
+                    <li><a href="index.html" id="performance">Performance</a></li>
+                    <li><a href="projects.html" id="projects">Projects</a></li>
+                    <li><a href="sponsor.html" id="sponsor">Sponsor</a></li>
+                    <li><a href="power.html" id="racingHighlights">Power</a></li>
+                     <li><a href="http://blog.greenstage.co.nz" id="blog" target="_blank">Blog</a></li>
+                    <li><a href="people.html" id="people">People</a></li>
+                    <!-- InstanceEndEditable -->
+                </ul>
+                    
+            </div>
+            <div id="logo">
+            	<a href="index.html"><img src="images/Logo-Header.png" alt="Greenstage" title="Greenstage"/></a>
+            </div>
+        </div>
+    </div>
+	<div id="wrapper">
+    	
+        <div id="subHeader">
+        	<!-- InstanceBeginEditable name="subHeader" -->
+            <h1>Our Platform <em>Security.</em></h1>
+           
+             <!-- InstanceEndEditable -->
+        </div>
+        <div id="container">
+        	<div class="mainCol">
+            	<!-- InstanceBeginEditable name="mainCol" -->
+               
+                <div class="mainColSubContainer">
+                	
+                    	<h3>Our Approach</h3>
+<p>Our approach to security is to use the best open source technology platforms available and to leverage state of the art security protocols and techniques within these platforms.  We do not use <a href="https://en.wikipedia.org/wiki/Security_through_obscurity">security by obscurity</a> and neither should anyone else (unfortunately this still seems to be a common approach which can cause <a href="http://www.iebmedia.com/?id=7458&parentid=74&themeid=255&showdetail=true">many problems</a>). Our goal is to provide the best services with the best security ratings, we think we are doing pretty well.
+</p>
+<img src="images/SecurityRating.png" alt="Our Security Rating" style="width:304px;height:228px;">
+</p>
+                </div>
+                    	<h3>Security Specifics</h3>
+<p>
+All communication between remote SolarNode units and the SolarNet server services use HTTPS, with the minimum supported encryption version being TLS1.0, we no longer support the old and now insecure SSL v1, v2 and v3 protocols. A full summary of our security configuration is available <a href="https://www.ssllabs.com/ssltest/analyze.html?d=data.solarnetwork.net">here</a>.
+</p>
+<p>
+Posting data to the SolarNet server requires a SolarNet-issued X.509 client certificate for authentication (this ensures non repudiation of the source of the data collected).
+</p>
+<p>
+All actionable services performed by a SolarNode requires a specifically allocated token with a paired secret key.  This prevents unathorised agents from accessing the actionable services.
+</p>
+<p>
+If your company's security policy requires solutions to be deployed and accessed over a VPN, or behind a HTTPS proxy server or similar, the Greenstage SolarNetwork solutions can also be deployed with these additional measures in place.
+</p>
+
+                   
+                </div>
+                
+                 
+                <!-- InstanceEndEditable -->
+            </div>
+            <div class="sideCol">
+               <a href="http://shop.greenstage.co.nz" id="buyLink">Buy our Merchandise</a>
+               <a href="sponsor.html" id="supportLink">Support</a>
+                <a href="http://blog.greenstage.co.nz/feeds/posts/default?alt=rss" id="rssLink" target="_blank">RSS</a>
+              
+                <a href="people.html" id="meetLink">Meet the team</a>
+               
+                <!-- InstanceBeginEditable name="sideCol" -->
+                <!-- InstanceEndEditable -->
+            </div>
+            <div id="cleaner">
+            </div>
+        </div>
+        <div id="footer">
+        	<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">
+Greenstage</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.greenstage.co.nz" property="cc:attributionName" rel="cc:attributionURL">Team Greenstage</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.<br />
+<a href="http://www.rad3.com" target="_blank"><img src="images/rad3_white.png" alt="rad3" title="rad3" /></a>
+</p>
+        </div>
+    </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4399079-3");
+pageTracker._trackPageview();
+</script>
+</body>
+<!-- InstanceEnd --></html>
